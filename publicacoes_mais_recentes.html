@@ -82,7 +82,7 @@
                     function doSomething(response) {
                         if (cn < 10 && typeof response.paging !== "undefined" && typeof response.paging.next !== "undefined") {
                             var cnt4 = 0;
-                            //console.log(response.paging.next);;
+                           // console.log(response.paging.next);
                             FB.api(response.paging.next, doSomething);
                             var l = response.data.length;
                             var i = 0;
@@ -103,6 +103,7 @@
                                     }
                                     if (typeof response.data[i].comments.paging.next === "undefined") {
                                         var j = 0;
+                                        console.log(response.data[i].message);
                                         for (j; j < response.data[i].comments.data.length; j++) {
                                             var data_hora = response.data[i].comments.data[j].created_time.split('T', 2);
                                             var data = data_hora[0].split('-', 3);
@@ -113,7 +114,7 @@
                                                     + data[2] + "_;_" + data[1] + "_;_" + data[0] + "_;_<a style=\"font-size:small\" target=\"_blank\" href=\"" + "https://www.facebook.com/groups/" + arrayid[0] + "/permalink/" + id_post[1] + "\">Ver publicação</a>"
                                                     + "_;_descricao_;_" + comment + "_;_desccom_;_" + response.data[i].comments.data[j].message
                                                     + "_;_<a style=\"font-size:small\" target=\"_blank\" href=\"" + "https://www.facebook.com/groups/" + arrayid[0] + "/permalink/" + id_post[1] + "/?comment_id=" + response.data[i].comments.data[j].id + "\">Ver comentário</a>";
-                                            console.log(response.data[i].comments.data[j].from.name);
+                                            console.log(response.data[i].comments);
                             y++;
                                             
 
