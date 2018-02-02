@@ -43,7 +43,7 @@
             var posts2 = [];
             var descricao = [];
             var n_autor = [];
-            
+            console.log(arrayid[0]);
             var hide = "sim";
             setTimeout(function () {
 
@@ -75,7 +75,7 @@
                 function getInfo1(token) {
                     var url = "";
                     
-                    url = "/feed?fields=from,message,created_time,comments&limit=100&access_token=";
+                    url = "/feed?fields=message,created_time,comments&limit=100&access_token=";
                     var cn = 0;
                     FB.api(
                             "/" + arrayid[0] + url + token, doSomething);
@@ -90,7 +90,7 @@
 
                                 var comment = "";
                                 if (response.data[i].comments) {
-                                    var nome_autor = response.data[i].from.name;
+                                   // var nome_autor = response.data[i].from.name;
                                     var id_post = response.data[i].id.split('_', 2);
                                     var data_hora_post = response.data[i].created_time.split('T', 2);
                                     var data_post = data_hora_post[0].split('-', 3);
