@@ -27,11 +27,11 @@
             <div class="container">
                 <div class="navbar-header">
 
-                    <a class="navbar-brand" style="margin-top: 4px;"><b>Aplicação para grupos</b></a>
+                    <a class="navbar-brand" style="margin-top: 4px;"><b>Aplicação para páginas</b></a>
 
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a style="margin-top: 4px;" href="https://fernandacanazzo.github.io/appgrupos/index.html"><span class="glyphicon glyphicon-search " style=" font-size:small;margin-right: 6px;"></span>Pesquisar grupo</a></li>
+                    <li><a style="margin-top: 4px;" href="https://fernandacanazzo.github.io/app_paginas/index.html"><span class="glyphicon glyphicon-search " style=" font-size:small;margin-right: 6px;"></span>Pesquisar página</a></li>
                 </ul>
 
             </div>
@@ -41,7 +41,7 @@
 
                 <div class="col-md-12">
                     <div class="panel-body text-center" style="background-color: #fefefe;">
-                        <button class="btn btn-xs btn-default text-left" id="voltar" style="display:block; position: fixed; margin-top:10px;font-size:large;border-bottom-style:none; height:30px; width:30px;border-radius: 50%;" type="button" onclick="location.href = 'https://fernandacanazzo.github.io/appgrupos/index.html'"><span class="glyphicon glyphicon-arrow-left" style="color:#333333"></span></button>
+                        <button class="btn btn-xs btn-default text-left" id="voltar" style="display:block; position: fixed; margin-top:10px;font-size:large;border-bottom-style:none; height:30px; width:30px;border-radius: 50%;" type="button" onclick="location.href = 'https://fernandacanazzo.github.io/app_paginas/index.html'"><span class="glyphicon glyphicon-arrow-left" style="color:#333333"></span></button>
 
                         <h2 id="nome"></h2>
 
@@ -216,7 +216,7 @@ Podem ser retornadas até 1000 publicações" class=" text-primary glyphicon gly
                             <!--<div class="col-md-5">
                                 <div class="panel panel-primary text-left" id="panel4" style="margin-top:-15px;margin-left:-25px;border-left-color:#fefefe; border-right-color:#fefefe; border-top-color:#fefefe; border-bottom-color:#fefefe;height:150px; width: 100%; background-color: #fbfbfb">
                                     <div class="panel-body" id="div4" style="height:105px; border-left-color:#fefefe; border-right-color:#fefefe; border-top-color:#fefefe;">
-                                        <span class="glyphicon glyphicon-thumbs-up" style="font-size: x-large; color:#cccccc;margin-right: 12px; margin-top:12px;"></span><a style="color: #333333; font-size: x-large; text-decoration: none;" href="https://fernandacanazzo.github.io/appgrupos/quantidade_publicacoes.html">Quantidade de publicações por dia e suas reações</a> 
+                                        <span class="glyphicon glyphicon-thumbs-up" style="font-size: x-large; color:#cccccc;margin-right: 12px; margin-top:12px;"></span><a style="color: #333333; font-size: x-large; text-decoration: none;" href="https://fernandacanazzo.github.io/app_paginas/quantidade_publicacoes.html">Quantidade de publicações por dia e suas reações</a> 
                                     </div>
                                     <div class="panel-body" id="div44" style="border-top-color:#f6f6f6; border-top-style: solid; border-top-width: 1px; background-color: #f6f6f6; height:44px">
                                         <a href="#panel4"  id="ler4" class="text-left text-primary" onclick="clickar4();"> <span class="glyphicon glyphicon-plus" style="font-size: large; margin-right: 6px;"></span></a><p id="p4"><br>&nbsp</p>
@@ -278,7 +278,7 @@ Podem ser retornadas até 1000 publicações" class=" text-primary glyphicon gly
                                     <div class="panel-body text-left" id="div55" style="border-top-color:#f6f6f6; border-top-style: solid; border-top-width: 1px; background-color: #f6f6f6; height:44px">
                                         <a href="#panel5" id="ler5" class="text-left text-primary" onclick="clickar5();"> <span class="glyphicon glyphicon-plus" style="font-size: large; margin-right: 6px;"></span></a><p id="p5"><br>&nbsp</p>
 
-                                        <p id="col5" style="color:#333333; display:none; font-size:small; margin-left:8px">Essa opção mostra um gráfico de barras com o seguinte dado das 1000 publicações mais recentes:<br>&#9679N publicações mais populares* <br><br>*Popularidade: (reações + comentários) / membros do grupo</p>
+                                        <p id="col5" style="color:#333333; display:none; font-size:small; margin-left:8px">Essa opção mostra um gráfico de barras com o seguinte dado das 1000 publicações mais recentes:<br>&#9679N publicações mais populares* <br><br>*Popularidade: (reações + comentários + compartilhamentos) / fãs da página</p>
 
                                     </div>
 
@@ -365,7 +365,7 @@ Podem ser retornadas até 1000 publicações" class=" text-primary glyphicon gly
                 } else {
                     localStorage.setItem("numero1", numero1);
                     localStorage.setItem("nome1", nome1);
-                    location.href = 'https://fernandacanazzo.github.io/appgrupos/publicacoes_mais_recentes.html';
+                    location.href = 'https://fernandacanazzo.github.io/app_paginas/publicacoes_mais_recentes.html';
                 }
             }
 
@@ -380,7 +380,7 @@ Podem ser retornadas até 1000 publicações" class=" text-primary glyphicon gly
                 var ano_fim = $("#ano_fim").find("option:selected").val();
                 var datas = dia_ini + ";" + mes_ini + ";" + ano_ini + ";" + dia_fim + ";" + mes_fim + ";" + ano_fim;
                 localStorage.setItem("datas", datas);
-                location.href = 'https://fernandacanazzo.github.io/appgrupos/publicacoes_periodo.html';
+                location.href = 'https://fernandacanazzo.github.io/app_paginas/publicacoes_periodo.html';
             }
 
             function rf03() {
@@ -397,7 +397,7 @@ Podem ser retornadas até 1000 publicações" class=" text-primary glyphicon gly
                 } else {
                     localStorage.setItem("numero3", numero3);
                     localStorage.setItem("palavra", palavra);
-                    location.href = 'https://fernandacanazzo.github.io/appgrupos/palavras_publicacoes.html';
+                    location.href = 'https://fernandacanazzo.github.io/app_paginas/palavras_publicacoes.html';
                 }
             }
             
@@ -413,7 +413,7 @@ Podem ser retornadas até 1000 publicações" class=" text-primary glyphicon gly
                     document.getElementById("div4").style.height = "257px";
                 } else {
                     localStorage.setItem("numero4", numero4);
-                    location.href = 'https://fernandacanazzo.github.io/appgrupos/quantidade_publicacoes.html';
+                    location.href = 'https://fernandacanazzo.github.io/app_paginas/quantidade_publicacoes.html';
                 }
             }
 
@@ -429,7 +429,7 @@ Podem ser retornadas até 1000 publicações" class=" text-primary glyphicon gly
                     document.getElementById("div5").style.height = "255px";
                 } else {
                     localStorage.setItem("numero5", numero5);
-                    location.href = 'https://fernandacanazzo.github.io/appgrupos/popularidade.html';
+                    location.href = 'https://fernandacanazzo.github.io/app_paginas/popularidade.html';
                 }
             }
 
@@ -445,7 +445,7 @@ Podem ser retornadas até 1000 publicações" class=" text-primary glyphicon gly
                     document.getElementById("div6").style.height = "255px";
                 } else {
                     localStorage.setItem("numero6", numero6);
-                    location.href = 'https://fernandacanazzo.github.io/appgrupos/reacoes.html';
+                    location.href = 'https://fernandacanazzo.github.io/app_paginas/reacoes.html';
                 }
             }
 
@@ -461,12 +461,12 @@ Podem ser retornadas até 1000 publicações" class=" text-primary glyphicon gly
                     document.getElementById("div7").style.height = "255px";
                 } else {
                     localStorage.setItem("numero7", numero7);
-                    location.href = 'https://fernandacanazzo.github.io/appgrupos/pessoas_mais_comentarios.html';
+                    location.href = 'https://fernandacanazzo.github.io/app_paginas/pessoas_mais_comentarios.html';
                 }
             }
 
             array = id_grupo.split('_;_', 2);
-            document.getElementById('nome').innerHTML = "O que você quer visualizar no grupo <b>" + array[1] + "</b>?";
+            document.getElementById('nome').innerHTML = "O que você quer visualizar na página <b>" + array[1] + "</b>?";
             function clickar1() {
                 if (document.getElementById("col1").style.display === "none") {
                     document.getElementById("col1").style.display = "inline-block";
