@@ -48,7 +48,7 @@
             setTimeout(function () {
 
                 window.fbAsyncInit();
-                location.href = 'https://fernandacanazzo.github.io/app_paginas/vis_publicacoes_mais_recentes.html';
+               // location.href = 'https://fernandacanazzo.github.io/app_paginas/vis_publicacoes_mais_recentes.html';
 
             }, 50000);
 
@@ -183,9 +183,10 @@
                         }
 
                     }
+                    console.log(string2);
                     return string.concat(string2);
                 }
-
+                
                 FB.getLoginStatus(function (response) {
                     if (response.status === 'connected') {
                         accessToken = response.authResponse.accessToken;
